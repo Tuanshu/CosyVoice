@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  fish-speech:
+    image: fishaudio/fish-speech:latest-dev-202412-with-1.4model
+
+    ports:
+      - "6619:50000" # api
+
+    command: python3 server.py --port 50000 --max_conc 4 --model_dir iic/CosyVoice-300M && sleep infinity
+    # 我應該會想要換為CosyVoice 2.0, 也就是https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B, 可以看到有一個CosyVoice2的物件(cosyvoice/cli/cosyvoice.py), 要確認一下server.py是用哪個
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              #count: "all"
+              capabilities: [gpu]
+              device_ids: ["1"]
+    # command: tail -f /dev/null
