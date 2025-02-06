@@ -193,6 +193,9 @@ if __name__ == '__main__':
             raise TypeError('no valid model_type!')
 
     sft_spk = cosyvoice.list_available_spks()
+
+    print(f'sft_spk (web UI)={sft_spk}')
+    
     if len(sft_spk) == 0:
         sft_spk = ['']
     prompt_sr = 16000
