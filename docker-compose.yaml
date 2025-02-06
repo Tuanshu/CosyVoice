@@ -1,8 +1,9 @@
-version: "3.8"
-
 services:
-  fish-speech:
-    image: fishaudio/fish-speech:latest-dev-202412-with-1.4model
+  cozyvoice-uv:
+    image: cozyvoice-uv:0.1.0
+    build:
+      # context: src
+      dockerfile: ./docker/Dockerfile.uv
 
     ports:
       - "6619:50000" # api
