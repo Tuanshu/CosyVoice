@@ -555,7 +555,6 @@ dependencies = [
     { name = "torchaudio" },
     { name = "transformers" },
     { name = "uvicorn" },
-    { name = "wetextprocessing" },
     { name = "wget" },
 ]
 
@@ -596,7 +595,6 @@ requires-dist = [
     { name = "torchaudio", specifier = "==2.3.1" },
     { name = "transformers", specifier = "==4.40.1" },
     { name = "uvicorn", specifier = "==0.30.0" },
-    { name = "wetextprocessing", specifier = "==1.0.3" },
     { name = "wget", specifier = "==3.2" },
 ]
 
@@ -1254,15 +1252,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/33/08/c1395a292bb23fd03bdf572a1357c5a733d3eecbab877641ceacab23db6e/importlib_metadata-8.6.1.tar.gz", hash = "sha256:310b41d755445d74569f993ccfc22838295d9fe005425094fad953d7f15c8580", size = 55767 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/79/9d/0fb148dc4d6fa4a7dd1d8378168d9b4cd8d4560a6fbf6f0121c5fc34eb68/importlib_metadata-8.6.1-py3-none-any.whl", hash = "sha256:02a89390c1e15fdfdc0d7c6b25cb3e62650d0494005c97d6f148bf5b9787525e", size = 26971 },
-]
-
-[[package]]
-name = "importlib-resources"
-version = "6.5.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/cf/8c/f834fbf984f691b4f7ff60f50b514cc3de5cc08abfc3295564dd89c5e2e7/importlib_resources-6.5.2.tar.gz", hash = "sha256:185f87adef5bcc288449d98fb4fba07cea78bc036455dd44c5fc4a2fe78fed2c", size = 44693 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a4/ed/1f1afb2e9e7f38a545d628f864d562a5ae64fe6f7a10e28ffb9b185b4e89/importlib_resources-6.5.2-py3-none-any.whl", hash = "sha256:789cfdc3ed28c78b67a06acb8126751ced69a3d5f79c095a98298cd8a760ccec", size = 37461 },
 ]
 
 [[package]]
@@ -2675,19 +2664,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pynini"
-version = "2.1.5"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "cython" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/86/63/6a720dbdf4e7358baa2ab206a51693f9c6e83d174179a95539f501bd4a34/pynini-2.1.5.tar.gz", hash = "sha256:c32a55228aea4e3a3daa0d22ba0ea89ea90c17151c3a0fd5703b699d4e7d4e9b", size = 627614 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/e7/07/f3b8869878093fe7d119cbdcc97de0b64e4b8e2a7933c817fcef1fe455bb/pynini-2.1.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:29ea2c3b8218a87934d8707eceac573d88dc5e8797380711dcb314af203a3eb0", size = 161292502 },
-    { url = "https://files.pythonhosted.org/packages/ab/83/2708b2ddef8d6d780e6ac7f9801635e99912b5d3aeeeddf2cbb322688595/pynini-2.1.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4c9473cf25231a92a4e2e2226d79036d115c09e2e362dbcf5bc4cbd872b9bf40", size = 154739521 },
-]
-
-[[package]]
 name = "pynvml"
 version = "12.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3813,19 +3789,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/9f/69/83029f1f6300c5fb2471d621ab06f6ec6b3324685a2ce0f9777fd4a8b71e/werkzeug-3.1.3.tar.gz", hash = "sha256:60723ce945c19328679790e3282cc758aa4a6040e4bb330f53d30fa546d44746", size = 806925 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/52/24/ab44c871b0f07f491e5d2ad12c9bd7358e527510618cb1b803a88e986db1/werkzeug-3.1.3-py3-none-any.whl", hash = "sha256:54b78bf3716d19a65be4fceccc0d1d7b89e608834989dfae50ea87564639213e", size = 224498 },
-]
-
-[[package]]
-name = "wetextprocessing"
-version = "1.0.3"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "importlib-resources" },
-    { name = "pynini" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/9b/28/edcb748b327b33c18ff5b4ea80e9e86b4ebd250c95de6448b98f7bee9659/WeTextProcessing-1.0.3.tar.gz", hash = "sha256:c29649a74de1de0ee6a8603d4fec150c71f099230389b48d71e3de6463b7832e", size = 1844620 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/ed/8f/c0fa549d04759fd48e27c55f8c2e69470c0228cbfba96ef3fef6a53bf383/WeTextProcessing-1.0.3-py3-none-any.whl", hash = "sha256:e84e8a28827cec06750e9d5f4229d80e438f4a7d7feb783e33abe0bbdb83385d", size = 1970527 },
 ]
 
 [[package]]
