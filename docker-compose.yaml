@@ -8,7 +8,7 @@ services:
     ports:
       - "6619:50000" # api
 
-    command: python3 server.py --port 50000 --max_conc 4 --model_dir iic/CosyVoice-300M && sleep infinity
+    # command: python3 server.py --port 50000 --max_conc 4 --model_dir iic/CosyVoice-300M && sleep infinity
     # 我應該會想要換為CosyVoice 2.0, 也就是https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B, 可以看到有一個CosyVoice2的物件(cosyvoice/cli/cosyvoice.py), 要確認一下server.py是用哪個
 
     deploy:
@@ -19,4 +19,4 @@ services:
               #count: "all"
               capabilities: [gpu]
               device_ids: ["1"]
-    # command: tail -f /dev/null
+    command: tail -f /dev/null

@@ -30,7 +30,7 @@ dependencies = [
     "pyworld==0.3.4",
     "rich==13.7.1",
     "soundfile==0.12.1",
-    "tensorboard==2.14.0",
+    # "tensorboard==2.14.0",
     # "tensorrt-cu12==10.0.1",
     # "tensorrt-cu12-bindings==10.0.1",
     # "tensorrt-cu12-libs==10.0.1",
