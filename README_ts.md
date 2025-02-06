@@ -48,3 +48,6 @@ https://forums.developer.nvidia.com/t/cant-seem-to-get-anything-tts-or-asr-relat
 git submodule init
 
 git submodule update --recursive
+
+
+如果用stream mode會有一些噪聲, 可能是在分片處, 如果不是stream, 效果蠻好的
