@@ -41,7 +41,7 @@ dependencies = [
     "wget==3.2",
     "fastapi==0.115.6",
     "fastapi-cli==0.0.4",
-    "WeTextProcessing==1.0.3",
+    "WeTextProcessing==1.0.3", # # 因為pynini, No module named 'Cython'會有問題, 從此處移除, 在最後pip
 ]
 
 
