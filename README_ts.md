@@ -5,3 +5,5 @@
     https://github.com/astral-sh/uv/issues/6250
 
     這三個也會需要獨立安裝
+
+    https://github.com/astral-sh/uv/issues/9347
