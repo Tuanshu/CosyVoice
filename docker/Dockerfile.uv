@@ -63,4 +63,7 @@ ENV PATH=${CUDA_HOME}/bin:${PATH}
 RUN uv pip install cython
 # RUN uv pip install WeTextProcessing==1.0.3
 
+
+RUN uv pip install WeTextProcessing --no-build-isolation 
+
 COPY . .
