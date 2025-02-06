@@ -58,3 +58,9 @@ explicit = true
 name = "aiinfra"
 url = "https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/"
 explicit = true
+
+
+# 以下是for dev only, 不應該對docker造成影響
+# uv sync  --only-group dev
+[dependency-groups]
+dev = ["fastapi==0.115.6"]
